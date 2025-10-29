@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_score/auth/model/signup_data.dart';
+import 'package:food_score/components/widget/full_width_button.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -121,16 +122,36 @@ class ProfilePage extends StatelessWidget {
                             ),
                           ],
                         ),
-
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 4),
-                          child: Divider(
-                            color: Color.fromRGBO(227, 227, 227, 1),
-                            thickness: 1,
-                          ),
-                        ),
                       ],
                     ),
+                  ),
+                  const SizedBox(height: 16),
+                  FullWidthButton(
+                    text: "Account Settings",
+                    onPressed: () {},
+                    icon: Icon(Icons.settings_outlined, size: 24),
+                    navigateIcon: Icon(Icons.navigate_next_outlined, size: 24),
+                  ),
+                  const SizedBox(height: 16),
+                  FullWidthButton(
+                    text: "Privacy & Security",
+                    onPressed: () {},
+                    icon: Icon(Icons.privacy_tip_outlined, size: 24),
+                    navigateIcon: Icon(Icons.navigate_next_outlined, size: 24),
+                  ),
+                  const SizedBox(height: 16),
+                  FullWidthButton(
+                    text: "Help & Support",
+                    onPressed: () {},
+                    icon: Icon(Icons.help_outline, size: 24),
+                    navigateIcon: Icon(Icons.navigate_next_outlined, size: 24),
+                  ),
+                  const SizedBox(height: 16),
+                  FullWidthButton(
+                    text: "Logout",
+                    onPressed: () {},
+                    icon: Icon(Icons.logout_outlined, size: 24),
+                    navigateIcon: Icon(Icons.navigate_next_outlined, size: 24),
                   ),
                 ],
               ),
